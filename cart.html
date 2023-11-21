@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-menu">
+            <div>
+                <img src="images/logo.png" alt="lennin">
+            </div>
+            <div class="page">
+                <a href="./index.html">Sản phẩm</a>
+                <a href="#">Sale</a>
+                <a href="#">Thư viện</a>
+                <a href="#">Giới thiệu</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="login/login.html">
+                    <i class="fa-solid fa-user" id="users"></i>
+                </a>
+                <div class="lines"></div>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+        </div>
+        <div id="products">
+
+        </div>
+        <div id="pay">
+            <div>
+                <label for="payMethod">Pay method: </label><br>
+                <select name="payMethod" id="">
+                    <option value="card">Credit card</option>
+                    <option value="cash">Cash</option>
+                </select>
+            </div>
+            <div>
+                <h2 id="total">Total price: <span>0</span></h2>
+                <button>Pay all</button>
+            </div>
+        </div>
+
+        <script src="./cart.js"></script>
+</body>
+
+</html>
